@@ -38,15 +38,11 @@ public class main {
 
             userGuess = sc.nextInt();
 
-            while (userGuess < 1) {
-                System.out.println("Please enter a number that is greater than 0");
+            while (userGuess < 1 || userGuess > 100) {
+                System.out.println("Number should be between 1 and 100!");
                 userGuess = sc.nextInt();
             }
 
-            while (userGuess > 100) {
-                System.out.println("Please enter a number that is less than or equal to 100");
-                userGuess = sc.nextInt();
-            }
             
             analyzeNum(userGuess);
                     
