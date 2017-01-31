@@ -24,14 +24,10 @@ public class main {
         }    
     }
 
-    public static void main (String[] args) {
+    public static void loopThrough(String userName) {
         Scanner sc = new Scanner(System.in);
-        String userName;
         char tryAgain;
         int userGuess;
-
-        System.out.println("Welcome, what is your name?");
-        userName = sc.next();
 
         while (true) {
             System.out.println("Okay " + userName + ", please enter a number between 1 and 100");
@@ -71,5 +67,16 @@ public class main {
                 // not necessary here 
             }
         }
+    }
+
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String userName;
+        char tryAgain;
+        int userGuess;
+
+        System.out.println("Welcome, what is your name?");
+        userName = sc.next();
+        loopThrough(userName);
     }
 }
