@@ -24,8 +24,7 @@ public class main {
         }    
     }
 
-    public static void loopThrough(String userName) {
-        Scanner sc = new Scanner(System.in);
+    public static void loopThrough(String userName, Scanner sc) {
         char tryAgain;
         int userGuess;
 
@@ -77,6 +76,6 @@ public class main {
 
         System.out.println("Welcome, what is your name?");
         userName = sc.next();
-        loopThrough(userName);
+        loopThrough(userName, sc);
     }
 }
