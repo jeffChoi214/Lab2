@@ -8,7 +8,6 @@ public class main {
     public static void analyzeNum(int userGuess) {
         System.out.println("Input: " + userGuess);
 
-
         if (userGuess % 2 == 0) {
             if (userGuess >= 2 && userGuess <= 25) {
                 System.out.println("Even and less than 25");
@@ -71,10 +70,6 @@ public class main {
             else if (tryAgain == 'y' || tryAgain == 'Y') {
                 // not necessary here 
             }
-
         }
-
-
     }
-
 }
